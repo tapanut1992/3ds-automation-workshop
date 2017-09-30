@@ -1,0 +1,35 @@
+
+1. Create laravel project
+# composer create-project --prefer-dist laravel/laravel app
+
+2. Start docker
+# docker-compose up -d
+
+3. Open https://localhost
+
+4. Modify .env as below
+
+DB_CONNECTION=mysql
+DB_HOST=mysql
+DB_PORT=3306
+DB_DATABASE=my_database
+DB_USERNAME=my_user
+DB_PASSWORD=my_password
+
+5. Migrate tables
+# docker exec -i 09creategit_phpfpm_1 php artisan migrate
+
+6. Create git and push project into git
+
+7. Init git
+# git init
+# git add .
+# git commit -m "First commit"
+# git remote add origin https://tapanut@bitbucket.org/3dsinteractive/3ds-automation-workshop.git
+# git remote add origin https://github.com/tapanut1992/3ds-automation-workshop.git
+# git push -u origin master
+
+8. Add git to source tree and init git flow
+
+9. Start new feature called automate_test
+
